@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/jobs_nav_btn"
+        android:icon="@drawable/jobs_icon"
+        android:title="Jobs"/>
+    <item
+        android:id="@+id/bookmark_nav_btn"
+        android:icon="@drawable/bookmark_filled_icon"
+        android:title="Bookmark"/>
+</menu>

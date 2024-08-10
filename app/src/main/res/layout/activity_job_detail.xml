@@ -1,0 +1,493 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".activities.JobDetailActivity"
+    android:background="@color/white">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/page_title_card"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardBackgroundColor="@color/white"
+        android:layout_centerInParent="true"
+        android:layout_alignParentTop="true"
+        app:cardElevation="6dp">
+
+    <ImageView
+        android:id="@+id/back_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:background="@drawable/circular_bg"
+        android:backgroundTint="#A3B2BB"
+        android:padding="4dp"
+        android:src="@drawable/back_arrow"/>
+
+    <TextView
+        android:id="@+id/page_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Job Details"
+        android:textSize="25dp"
+        android:layout_marginTop="10dp"
+        android:textColor="@color/primary_blue"
+        android:fontFamily="@font/alegreya_sans_bold"
+        android:textAllCaps="true"
+        android:textAlignment="center"/>
+    </androidx.cardview.widget.CardView>
+    
+    <ScrollView
+        android:id="@+id/scroll_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/page_title_card"
+        android:visibility="gone">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:cardElevation="6dp"
+            app:cardCornerRadius="20dp"
+            app:cardBackgroundColor="@color/white"
+            android:layout_margin="20dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/company_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Company Name"
+                    android:textAlignment="center"
+                    android:textSize="18sp"
+                    android:textColor="@color/light_black"
+                    android:fontFamily="@font/alegreya"
+                    android:layout_margin="5dp"/>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="#C5C1C1"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:id="@+id/job_title"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Job Title : "
+                        android:drawableLeft="@drawable/title_icon"
+                        android:drawablePadding="10dp"
+                        android:layout_margin="10dp"
+                        android:fontFamily="@font/alegreya"
+                        android:textColor="@color/black"
+                        android:textSize="16sp"/>
+
+                    <TextView
+                        android:id="@+id/job_title_tv"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Android Developer"
+                        android:drawablePadding="10dp"
+                        android:layout_margin="10dp"
+                        android:fontFamily="@font/alegreya"
+                        android:textColor="@color/black"
+                        android:textSize="16sp"/>
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:id="@+id/experience"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Experience : "
+                        android:drawableLeft="@drawable/exp_icon"
+                        android:drawablePadding="10dp"
+                        android:layout_margin="10dp"
+                        android:fontFamily="@font/alegreya"
+                        android:textColor="@color/black"
+                        android:textSize="16sp"/>
+
+                    <TextView
+                        android:id="@+id/exp_tv"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="2 years"
+                        android:drawablePadding="10dp"
+                        android:layout_margin="10dp"
+                        android:fontFamily="@font/alegreya"
+                        android:textColor="@color/black"
+                        android:textSize="16sp"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:id="@+id/salaryTextView"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Salary :"
+                        android:drawableLeft="@drawable/rupee_icon"
+                        android:drawablePadding="10dp"
+                        android:layout_margin="10dp"
+                        android:fontFamily="@font/alegreya"
+                        android:textColor="@color/black"
+                        android:textSize="16sp"/>
+
+                    <TextView
+                        android:id="@+id/salary_tv"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="10 LPA"
+                        android:drawablePadding="10dp"
+                        android:layout_margin="10dp"
+                        android:fontFamily="@font/alegreya"
+                        android:textColor="@color/black"
+                        android:textSize="16sp"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:id="@+id/qualification"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Qualification : "
+                        android:layout_margin="10dp"
+                        android:drawableLeft="@drawable/qulification_icon"
+                        android:drawablePadding="10dp"
+                        android:fontFamily="@font/alegreya"
+                        android:textColor="@color/black"
+                        android:textSize="16sp"
+                        />
+
+                    <TextView
+                        android:id="@+id/qualification_tv"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="MCA"
+                        android:drawablePadding="10dp"
+                        android:layout_margin="10dp"
+                        android:fontFamily="@font/alegreya"
+                        android:textColor="@color/black"
+                        android:textSize="16sp"/>
+
+                </LinearLayout>
+
+
+
+
+
+
+            </LinearLayout>
+
+        </androidx.cardview.widget.CardView>
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="More Details"
+            android:textSize="20sp"
+            android:textColor="@color/primary_blue"
+            android:fontFamily="@font/alegreya_sans_bold"
+            android:textAlignment="center"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#C5C1C1"
+            android:layout_margin="20dp"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal">
+
+            <TextView
+                android:id="@+id/job_type"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Job Type : "
+                android:layout_margin="10dp"
+                android:fontFamily="@font/alegreya"
+                android:textColor="@color/black"
+                android:textSize="16sp"
+                />
+
+            <TextView
+                android:id="@+id/job_type_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="abcde"
+                android:drawablePadding="10dp"
+                android:layout_margin="10dp"
+                android:fontFamily="@font/alegreya"
+                android:textColor="@color/black"
+                android:textSize="16sp"/>
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#C5C1C1"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal">
+
+            <TextView
+                android:id="@+id/location"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Location : "
+                android:layout_margin="10dp"
+                android:fontFamily="@font/alegreya"
+                android:textColor="@color/black"
+                android:textSize="16sp"
+                />
+
+            <TextView
+                android:id="@+id/location_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="abcde"
+                android:drawablePadding="10dp"
+                android:layout_margin="10dp"
+                android:fontFamily="@font/alegreya"
+                android:textColor="@color/black"
+                android:textSize="16sp"/>
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#C5C1C1"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal">
+
+            <TextView
+                android:id="@+id/workingHrs"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Working Hrs : "
+                android:layout_margin="10dp"
+                android:fontFamily="@font/alegreya"
+                android:textColor="@color/black"
+                android:textSize="16sp"
+                />
+
+            <TextView
+                android:id="@+id/workingHrs_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="full time"
+                android:drawablePadding="10dp"
+                android:layout_margin="10dp"
+                android:fontFamily="@font/alegreya"
+                android:textColor="@color/black"
+                android:textSize="16sp"/>
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#C5C1C1"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal">
+
+            <TextView
+                android:id="@+id/numberOfOpenings"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Number of Openings : "
+                android:layout_margin="10dp"
+                android:fontFamily="@font/alegreya"
+                android:textColor="@color/black"
+                android:textSize="16sp"
+                />
+
+            <TextView
+                android:id="@+id/numberOfopenings_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="50"
+                android:drawablePadding="10dp"
+                android:layout_margin="10dp"
+                android:fontFamily="@font/alegreya"
+                android:textColor="@color/black"
+                android:textSize="16sp"/>
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#C5C1C1"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal">
+
+            <TextView
+                android:id="@+id/numberOfApplications"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Number of Applications : "
+                android:layout_margin="10dp"
+                android:fontFamily="@font/alegreya"
+                android:textColor="@color/black"
+                android:textSize="16sp"
+                />
+
+            <TextView
+                android:id="@+id/numberOfApplications_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="100"
+                android:drawablePadding="10dp"
+                android:layout_margin="10dp"
+                android:fontFamily="@font/alegreya"
+                android:textColor="@color/black"
+                android:textSize="16sp"/>
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#C5C1C1"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp"/>
+
+<!--        <LinearLayout-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:gravity="center_horizontal">-->
+
+<!--            <TextView-->
+<!--                android:id="@+id/content"-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:text="Content : "-->
+<!--                android:layout_margin="10dp"-->
+<!--                android:fontFamily="@font/alegreya"-->
+<!--                android:textColor="@color/black"-->
+<!--                android:textSize="16sp"-->
+<!--                />-->
+
+<!--            <TextView-->
+<!--                android:id="@+id/content_tv"-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:text="abcde"-->
+<!--                android:drawablePadding="10dp"-->
+<!--                android:layout_margin="10dp"-->
+<!--                android:fontFamily="@font/alegreya"-->
+<!--                android:textColor="@color/black"-->
+<!--                android:textSize="16sp"/>-->
+
+<!--        </LinearLayout>-->
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:gravity="center_horizontal">
+
+            <TextView
+                android:id="@+id/contact_details"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:fontFamily="@font/alegreya_sans_bold"
+                android:text="Contact Details"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:textColor="#4C4C4C"/>
+
+
+            <TextView
+                android:id="@+id/phone_no_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="9876543210 "
+                android:drawableLeft="@drawable/phone_icon"
+                android:drawablePadding="10dp"
+                android:drawableTint="@color/primary_blue"
+                android:layout_margin="10dp"
+                android:fontFamily="@font/alegreya"
+                android:textColorLink="@color/primary_blue"
+                android:textColor="@color/primary_blue"
+                android:textSize="16sp"/>
+
+
+            <ImageView
+                android:id="@+id/whatsapp_link"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/whatsapp_logo"
+                android:padding="10dp"
+                />
+
+
+        </LinearLayout>
+
+
+
+
+    </LinearLayout>
+
+    </ScrollView>
+
+    <ProgressBar
+        android:id="@+id/progressBar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:visibility="visible"/>
+
+
+
+
+</RelativeLayout>
