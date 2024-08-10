@@ -1,7 +1,41 @@
-Screen shots of the APP
-![lokal_test_ss](https://github.com/user-attachments/assets/74ea4423-8ac2-482f-a27e-ad03d660633a)
+# Lokal Assignment
 
+This project showcases a job listing app with features like viewing job details and bookmarking jobs for later reference.
 
-Video Demonstration of Job Listing App
-https://github.com/user-attachments/assets/830898a7-0267-42f1-8843-5394a6a88b62
+## Screenshots
 
+<p align="center">
+  <img src="https://github.com/bhattaman0001/LokalAssignment/blob/master/assets/joblisting.jpg" alt="Job Listing" width="30%">
+  <img src="https://github.com/bhattaman0001/LokalAssignment/blob/master/assets/jobdetails.jpg" alt="Job Details" width="30%">
+  <img src="https://github.com/bhattaman0001/LokalAssignment/blob/master/assets/bookmark.jpg" alt="Bookmark" width="30%">
+</p>
+
+## Video Demonstration
+
+For a detailed walkthrough of the app, watch the [Lokal Assignment Video](https://github.com/bhattaman0001/LokalAssignment/blob/master/assets/lokal.mp4).
+
+---
+
+## Features
+
+- Infinite scroll job listing.
+- Detailed job view with all necessary information.
+- Bookmark jobs for offline access.
+
+## Tech Stack
+
+- **Kotlin**
+- **Room Database**
+- **Coroutines**
+
+## Installation
+
+To clone and run this project:
+
+```bash
+git clone https://github.com/bhattaman0001/LokalAssignment.git
+cd LokalAssignment
+<p align="center">
+  <b>Happy Coding!</b>
+</p>
+```
